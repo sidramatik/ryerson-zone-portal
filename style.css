@@ -1,0 +1,676 @@
+/*
+Theme Name: Bootstrap Basic
+Theme URI: http://rundiz.com
+Author: Vee Winch
+Author URI: 
+Description: Bootstrap v.3 basic theme for developers to build their new theme very fast and easy. You can support theme author by <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9HQE4GVV4KTZE" target="donate">donate</a>. To follow what was changed, please look for <a href="https://github.com/Rundiz/bootstrap-basic" target="commits">commits</a> of this theme at Github.
+Version: 1.0.11
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Text Domain: bootstrap-basic
+Domain Path: /languages/
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, front-page-post-form, post-formats, threaded-comments, translation-ready
+
+This theme built with Twitter Bootstrap v.3. It is basic theme with basic style for build new theme with Bootstrap.
+
+*/
+
+
+/* Custom RZP Theme CSS */
+
+html, body {
+	overflow-x: hidden
+}
+
+.header-logo{
+width: 180px;    
+padding: 15px;
+margin-top: -26px;
+}
+.navbar-toggle {
+	background: #004c9a !important;
+	border: 0;
+}
+
+.photoswipe_showme {
+    padding: 0;
+    margin: 0 !important;
+}
+
+
+h2.long-title {
+    font-size: 24px;
+    font-weight: 400;
+margin: 0 auto 35px auto;
+}
+
+/* Start Mobile */ 
+
+@media (max-width: 768px) {	
+.container-fluid.gradient {
+	height: 220px !important
+}
+#main img{
+display: block;
+width: 100%;
+height: auto
+}
+.single .content-container{
+padding: 0
+}
+.breadcrumb{
+display: none
+}
+	.first-slide, .second-slide, .third-slide {
+		height: 300px !important;
+	}
+	main#main {
+		padding: 20px 10px
+	}
+	.carousel-control {
+		height: 370px !important
+	}
+	h2.container {
+		color: #fff;
+		text-shadow: 1px 1px 2px #222;
+		text-transform: uppercase;
+		margin-top: 170px !important;
+		text-align: left;
+		margin-left: 30px !important;
+		font-size: 24px !important
+	}
+	.gradient {
+		height: 220px
+	}
+	.content-container {
+		padding: 0 15px;
+	}
+	.carousel-captions {
+		margin-left: none !important
+	}
+	.primary-content {
+		padding: 0 10px !important
+	}
+	footer {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+	h2.container {
+		font-size: 23px
+	}
+	.content {
+		padding: 0px 15px !important;
+	}
+	.header-image {
+		height: 220px !important;
+		margin-bottom: 0px;
+	}
+	.primary-content {
+		padding: 20px 20px
+	}
+	#myCarousel {
+		height: 290px
+	}
+	.explain {
+		padding: 25px 30px 0px 30px;
+	}
+	.container-fluid {
+		padding: 0 !important;
+	}
+	.carousel-captions {
+		background: #222222 !important;
+		display: block !important;
+		text-align: left !important;
+		padding: 20px 40px 20px 30px !important;
+		bottom: 0 !important;
+		height: 120px !important;
+		width: 100% !important;
+		position: absolute !important;
+		opacity: 0.9 !important;
+	}
+	.first-slide, .second-slide, .third-slide {
+		background-position: 0% 0% !important;
+		background-size: cover !important;
+	}
+	.carousel-indicators {
+		display: none !important;
+	}
+	.carousel-captions a.btn {
+		display: none !important;
+	}
+	.carousel-captions .category {
+		font-weight: bold;
+		letter-spacing: 1px;
+		color: #f0ad4e;
+		font-size: 10px;
+	}
+	.carousel-captions .slide-title {
+		font-size: 24px !important;
+		line-height: 29px !important;
+		display: block !important;
+		padding: 10px 0 !important;
+		color: #ffffff !important;
+	}
+	.slide-desc {
+		display: none !important;
+	}
+	.card {
+		margin-bottom: 20px;
+	}
+
+}
+/ * End Mobile */ 
+
+@media (min-width: 992px) {}
+.first-slide, .second-slide, .third-slide {
+	height: 480px;
+	background-position: 0% 0%;
+	background-size: cover;
+}
+.navbar-toggle .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+	color: #ffffff !important;
+	background: #fff;
+}
+.card-header {
+	background-image: url(http://placehold.it/1024x768);
+	height: 150px;
+	background-size: cover;
+	width: 100% !important;
+}
+.navbar-dark {
+	background: #222222;
+}
+.navbar-dark a {
+	color: #d4d4d4;
+}
+.navbar-brand {
+	text-transform: uppercase
+}
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro';
+	font-weight: lighter;
+}
+.nav>li>a:focus, .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	text-decoration: none;
+	background-color: #efefef;
+}
+#menu-zones {
+	background: #ffffff;
+	padding: 0;
+	margin: 0;
+}
+ul#menu-zones {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.dropdown-menu {
+	padding: 0;
+}
+ul#menu-zones li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul#menu-zones li a {
+	padding: 5px 8px;
+	display: block;
+	margin: 0;
+	text-decoration: none;
+	display: block;
+	color: #666666;
+	text-transform: uppercase;
+	border-bottom: 1px solid #dcdcdc;
+	border-left: 4px solid #f7f7f7;
+}
+ul#menu-zones li a:hover {
+	background: #f7f7f7;
+	border-left: 4px solid #f0ad4e
+}
+.content p {
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    line-height: 26px;
+    color: #6d6d6d;
+    font-weight: 300;
+}
+.content li {
+	font-size: 14px;
+	line-height: 22px;
+	color: #464646;
+	font-weight: 300px;
+}
+a.btn.btn-default {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	text-shadow: none;
+	background: #ffffff;
+	border: 2px solid #666666;
+	color: #666666;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+a:hover {
+	text-decoration: none;
+}
+.content p a {
+	font-weight: bold;
+}
+.content h3 {
+	font-weight: 300;
+	color: #666;
+	display: block;
+	padding: 0 0 15px 0;
+}
+.content {
+	padding: 25px 0;
+}
+section.error-404.not-found {
+	max-width: 1100px;
+	margin: 90px auto;
+}
+.dropdown-menu li a:hover {
+	background: #222222;
+}
+footer {
+	background: #222222;
+	color: #cccccc;
+	padding: 40px 0 20px 0;
+}
+.copyright {
+	text-align: center;
+	padding: 40px 0;
+	border-top: 1px solid #4e4e4e;
+	margin-top: 40px;
+}
+.gradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+37,0.65+100 */
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0.65) 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0.65) 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 37%, rgba(0, 0, 0, 0.65) 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+	/* IE6-9 */
+}
+h2.container {
+	margin-top: 414px;
+	background: none;
+	font-size: 34px;
+	padding-bottom: 9px;
+}
+.breadcrumb {
+	padding: 0 0 10px 0;
+	margin-bottom: 40px;
+	list-style: none;
+	background-color: #ffffff;
+	border-radius: 0;
+	border-bottom: 1px solid #ccc;
+	color: #ccc;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+.breadcrumb a {
+	color: #222;
+}
+footer a {
+	color: #ffffff;
+	text-transform: uppercase
+}
+footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+footer h5 {
+	color: #FBDC00;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 16px;
+	display: block;
+	padding: 0 0 22px 0;
+}
+nav input.form-control {
+	border-radius: 0;
+	padding: 10px;
+	background: #222;
+}
+nav button.btn.btn-default {
+	border: none;
+	border-radius: 0;
+	background: #004c9a;
+	text-shadow: none;
+	color: #fff;
+	text-transform: uppercase;
+	box-shadow: none;
+}
+.header-image h2 {
+	margin-top: 350px;
+	background: none;
+}
+.header-image {
+	height: 400px;
+	background-size: cover;
+	background-position: 50% 50%
+}
+.card-content span {
+	color: #949494;
+	font-weight: 300;
+	display: block;
+	padding: 5px 0 10px 0;
+	font-size: 12px;
+}
+span.nothing {
+	font-size: 32px;
+	color: #ccc;
+	display: block;
+	padding: 0 15px;
+}
+.carousel-captions {
+	background: #222222;
+	display: block;
+	text-align: left;
+	padding: 90px 50px;
+	bottom: 0;
+	height: 100%;
+	width: 400px;
+	position: absolute;
+	opacity: 0.9;
+}
+.container-fluid.gradient {
+	height: 400px;
+}
+.explain {
+	font-size: 22px;
+	color: #666666;
+	padding-top: 60px;
+}
+.explain span {
+	text-transform: uppercase;
+	font-weight: 300;
+	padding: 0 0 20px 0;
+	display: block;
+	text-align: left
+}
+.explain .btn {
+	border: 2px solid #666666;
+	color: #666666;
+	border-radius: 0;
+	text-align: left;
+	margin: 15px auto 0 auto;
+}
+.explain a {
+	color: #666666 !important;
+}
+.explain a:visited {
+	color: #222222;
+}
+.explain a:hover {
+	margin: 15px auto 0 auto;
+}
+.explain p {
+	font-size: 16px;
+	text-align: left
+}
+a.btn-flat {
+	border: 2px solid #f0ad4e;
+	border-radius: 0;
+	color: #f0ad4e;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin: 15px 0;
+}
+a.btn-flat:hover {
+	background: #f0ad4e;
+	color: #222;
+}
+.carousel-captions .category {
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #f0ad4e;
+}
+.carousel-captions .slide-title {
+	font-size: 32px;
+	line-height: 36px;
+	display: block;
+	padding: 15px 0;
+	color: #ffffff;
+}
+h2.container {
+	color: #fff;
+	text-shadow: 1px 1px 2px #222;
+	text-transform: uppercase;
+}
+.slide-desc {
+	display: block;
+	color: #cccccc;
+	line-height: 20px;
+}
+a:hover {
+	text-decoration: none !important
+}
+.slide-desc {
+	display: block;
+	color: #cccccc;
+	line-height: 20px;
+}
+.slide-desc a {
+	color: #fff;
+	font-weight: bold;
+}
+.card {
+	border: 1px solid #d8d8d8;
+	padding: 0px;
+	transition: all .2s ease-in-out;
+	display: block;
+height: 480px
+}
+.tags {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0 0 15px 0;
+	color: #aaaaaa;
+}
+.card:hover {
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 4px #f4f4f4;
+	transform: scale(1.0125);
+}
+.card-container {
+	padding: 0px 30px;
+	height: auto;
+}
+span.tag.tag-default {
+	display: inline-block;
+	background: #f0ad4e;
+	padding: 2px 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	margin: 160px 0 0 30px;
+	color: #ffffff;
+	border-radius: 30px;
+}
+.card h3 {
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 22px;
+}
+.card p {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 18px;
+	padding-top: 0;
+	margin-top: 0 !important;
+}
+.card span a:visited {
+	color: #ffffff;
+}
+.primary-content a {
+	color: #666;
+}
+.primary-content a:link {
+	color: #666;
+}
+.primary-content a:hover {
+	text-decoration: none;
+	color: #222;
+}
+.card a {
+	text-decoration: none
+}
+nav.navbar.navbar-fixed-top.navbar-light {
+	background: #ffffff;
+	box-shadow: 1px 0px 7px #ccc;
+}
+input#form-search-input {
+	background: #f4f4f4;
+}
+span.input-group-btn {
+	border: 1px solid #004c9a;
+}
+nav a {
+	font-weight: 500;
+	color: #666666;
+}
+.carousel-control {
+	height: calc(80vh);
+	background: transparent !important;
+}
+
+/*
+Required WordPress CSS
+*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.bypostauthor {}
+
+/* WordPress gallery */
+
+.gallery-caption {}
+.gallery {
+	margin-bottom: 1.6em;
+}
+.gallery-item {
+	display: inline-block;
+	padding: 1.79104477%;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+.gallery-icon img {
+	margin: 0 auto;
+}
+.gallery-caption {
+	color: #707070;
+	color: rgba(51, 51, 51, 0.7);
+	display: block;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	padding: 0.5em 0;
+}
+.gallery-columns-6 .gallery-caption, .gallery-columns-7 .gallery-caption, .gallery-columns-8 .gallery-caption, .gallery-columns-9 .gallery-caption {
+	display: none;
+}
+.sticky {}
+.wp-caption {
+	border: 1px solid #ccc;
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 1.2% auto 0;
+	max-width: 98%;
+}
+.wp-caption-text {
+	text-align: center;
+}
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+.card-image
+/* The background image of the card */
+{
+    width: 100%;
+    height: 300px;
+    background-position: center center;
+    height: 200px;
+    background-size: cover;
+}
