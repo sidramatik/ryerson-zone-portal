@@ -14,7 +14,9 @@ get_header();
 			<div class="header-image" style="background-image:url(<?php echo the_post_thumbnail_url(); ?>);">
  
 				<div class="container-fluid gradient">
-					<h2 class="container" style="background: none"><?php the_title(); ?></h2>
+					<div class="container">
+					<div class="header-title"><?php the_title(); ?></div>
+					</div>
 				</div>
 				</div>
 				<div class="content">

@@ -9,32 +9,31 @@ get_header();
 
 ?> 
 
- <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				
-				<div class="header-image" style="background-image:url(<?php echo the_post_thumbnail_url(); ?>)">
+<div class="header-image" style="background-image:url(<?php echo the_post_thumbnail_url(); ?>)">
+	<!-- Gets the custom post banner -->
+	<div class="container-fluid gradient">
+	<div class="container">
+		<div class="header-title">
+			<?php the_title(); ?>
+		</div>
+	</div>
+	</div>
+</div>
 
-				<div class="container-fluid gradient">
-					
-				</div>
-				</div>
-				<div class="content">
-				<div class="container">
-
-
-
-					<main id="main" class="site-main" role="main">
-						
-						<div class="content-container">
+<div class="content">
+	<div class="container">
+		<main id="main" class="site-main" role="main">
+			<div class="content-container">
 
 				<div class="breadcrumb">
-						<a href="/ryerson">Home</a>
-						&nbsp; > &nbsp;
-						
-						</div>
+					<a href="/ryerson">Home</a>
+					&nbsp; > &nbsp;
+				</div>
 		
-							<div class="row">
-						 
-						 <?php
+				<div class="row">
+					<?php
 						 if ( in_category( 'event' )) { ?>
 
 						 	<div class="sidebar col-sm-3">
@@ -59,10 +58,9 @@ get_header();
 						 	<div class="col-sm-9">
 						 	<?php 
 						} else { ?>
+						<div class="col-sm-12">
 
-							<div class="col-sm-12">
-
-	<?php						}
+						<?php }
 						?>
 
 						<?php
@@ -75,14 +73,11 @@ get_header();
 						}
 						?>
 
-							<h2 class="long-title"><?php the_title(); ?></h2>
-		
 						 <?php the_content(); ?>
 
 						 </div>
-<?php  endwhile; endif; //ends the loop
- ?>
-
+							<?php  endwhile; endif; //ends the loop
+							 ?>
 					</main>
 				</div> 
 				</div>

@@ -73,7 +73,7 @@ get_header();
         <?php $args = array(
         'numberposts' => 1,
         'showposts' => 1,
-        'offset' => 2,
+        'offset' => 1,
         'meta_query' => array(
           'relation' => 'OR',
           array(
@@ -116,7 +116,7 @@ get_header();
         <?php $args = array(
         'numberposts' => 1,
         'showposts' => 1,
-        'offset' => 3,
+        'offset' => 2,
         'meta_query' => array(
           'relation' => 'OR',
           array(
@@ -223,7 +223,7 @@ else {
     if($categories){
         foreach($categories as $category) {
                 $rl_category_color = rl_color($category->cat_ID);
-            $output .= '<a href="'.get_category_link( $category->term_id ).'" style="margin-right: 5px; margin-bottom: 5px; color:#ffffff;display:inline-block"> <button type="button" class="btn btn-xs" style="color:#ffffff !important; background-color:'.$rl_category_color.' !important;">'.$category->cat_name.'</button></a>'.$separator;
+            $output .= '<button type="button" class="btn btn-xs" style="margin-right: 6px !important; color:#ffffff !important; background-color:'.$rl_category_color.' !important;">'.$category->cat_name.'</button>'.$separator;
         }
     echo trim($output, $separator);
     }

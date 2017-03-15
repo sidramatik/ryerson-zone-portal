@@ -12,7 +12,13 @@ get_header();
        <div class="header-image" style="background-image:url(<?php echo the_post_thumbnail_url(); ?>)">
 
         <div class="container-fluid gradient">
-          <h2 class="container"><?php the_title(); ?></h2>
+          
+          <div class="container">
+            <div class="header-title">
+              <?php the_title(); ?>
+            </div>
+          </div>
+
         </div>
         </div>
         <div class="content">
@@ -55,7 +61,7 @@ while (have_posts()) : the_post();
 
 ?>
    <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
       <div class="card"  style="margin-bottom: 20px">
@@ -103,7 +109,7 @@ while (have_posts()) : the_post();
 
 ?>
   <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
       <div class="card"  style="margin-bottom: 20px">
@@ -151,7 +157,7 @@ while (have_posts()) : the_post();
 
 ?>
  <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
         <div class="card"  style="margin-bottom: 20px">
@@ -200,7 +206,7 @@ while (have_posts()) : the_post();
 
 ?>
   <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
         <div class="card"  style="margin-bottom: 20px">
@@ -250,7 +256,7 @@ while (have_posts()) : the_post();
 
 ?>
   <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
         <div class="card"  style="margin-bottom: 20px">
@@ -299,7 +305,7 @@ while (have_posts()) : the_post();
 
 ?>
   <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
         <div class="card"  style="margin-bottom: 20px">
@@ -348,7 +354,7 @@ while (have_posts()) : the_post();
 
 ?>
   <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
         <div class="card"  style="margin-bottom: 20px">
@@ -397,7 +403,7 @@ while (have_posts()) : the_post();
 
 ?>
   <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
           <div class="card"  style="margin-bottom: 20px">
@@ -447,7 +453,7 @@ while (have_posts()) : the_post();
 
 ?>
  <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
         <div class="card"  style="margin-bottom: 20px">
@@ -497,7 +503,7 @@ while (have_posts()) : the_post();
 
 ?>
  <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
         <div class="card"  style="margin-bottom: 20px">
@@ -547,7 +553,7 @@ while (have_posts()) : the_post();
 
 ?>
   <!-- Start Card -->
-    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 grid-item">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 grid-item">
          <a href="<?php the_permalink(); ?>">
               
         <div class="card"  style="margin-bottom: 20px">
@@ -597,7 +603,7 @@ while (have_posts()) : the_post();
   // do whatever you want
 
 ?>
- <div class="col-lg-4 col-md-6 col-sm-6 grid-item">
+ <div class="col-lg-6 col-md-6 col-sm-6 grid-item">
   <!-- Start Card -->
          <a href="<?php the_permalink(); ?>">
               

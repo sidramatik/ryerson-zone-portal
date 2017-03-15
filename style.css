@@ -22,6 +22,68 @@ html, body {
 	overflow-x: hidden
 }
 
+@media (min-width: 1200px){
+	.header-image{
+		height: 700px;
+	}
+	.first-slide, .second-slide, .third-slide {
+    height: 610px !important;
+    background-position: 0% 0%;
+    background-size: cover;
+}
+}
+@media (min-width: 769px) and (max-width: 1199px){
+	.header-image{
+		height: 460px !important;
+	}
+	.container-fluid.gradient{
+		height: 460px !important;
+	}
+	.header-title{
+		margin-top: 380px !important;
+	}
+	.first-slide, .second-slide, .third-slide {
+    height: 610px;
+    background-position: 0% 0%;
+    background-size: cover;
+}
+}
+@media (min-width: 421px) and (max-width: 768px){
+	.header-image{
+		height: 350px;
+	}
+	.container-fluid.gradient{
+		height: 350px;
+	}
+	.header-title{
+		margin-top: 380px !important;
+		padding: 0 30px;
+	}
+
+}
+@media (max-width: 420px){
+	.header-image{
+		height: 300px !important;
+	}
+
+	.container-fluid.gradient{
+		height: 300px !important;
+	}
+	.header-title{
+		line-height: 26px;
+		margin-top: 210px !important;
+		text-align: left !important;
+		padding: 0 20px;
+	}
+}
+
+
+.header-title {
+    font-size: 28px;
+    color: #fff;
+    text-align: left;
+    margin-top: 450px;
+}
 .header-logo{
 width: 180px;    
 padding: 15px;
@@ -37,19 +99,21 @@ margin-top: -26px;
     margin: 0 !important;
 }
 
-
+.content-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 h2.long-title {
     font-size: 24px;
     font-weight: 400;
 margin: 0 auto 35px auto;
 }
+.left{display:none;}
 
 /* Start Mobile */ 
 
-@media (max-width: 768px) {	
-.container-fluid.gradient {
-	height: 220px !important
-}
+@media (max-width: 768px) {
 #main img{
 display: block;
 width: 100%;
@@ -102,7 +166,7 @@ display: none
 		padding: 0px 15px !important;
 	}
 	.header-image {
-		height: 220px !important;
+
 		margin-bottom: 0px;
 	}
 	.primary-content {
@@ -357,7 +421,7 @@ nav button.btn.btn-default {
 	background: none;
 }
 .header-image {
-	height: 400px;
+	height: 520px;
 	background-size: cover;
 	background-position: 50% 50%
 }
@@ -386,7 +450,7 @@ span.nothing {
 	opacity: 0.9;
 }
 .container-fluid.gradient {
-	height: 400px;
+	height: 520px;
 }
 .explain {
 	font-size: 22px;
